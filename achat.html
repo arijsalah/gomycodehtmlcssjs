@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passation de Commande</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Passation de Commande</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="commande">
+        <h2>Informations de Commande</h2>
+        <form>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required><br>
+
+            <label for="produit">Produit :</label>
+            <select id="produit" name="produit" required>
+                <option value="bague">Bague</option>
+                <option value="collier">Collier</option>
+                <option value="bracelet">Bracelet</option>
+            </select><br>
+
+            <label for="quantite">Quantité :</label>
+            <input type="number" id="quantite" name="quantite" min="1" required><br>
+
+            <button type="submit">Confirmer la Commande</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Boutique d'Accessoires. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
